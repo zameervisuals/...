@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Book a Slot for Photoshoot</title>
+
+  <!-- <style>
+    /* Classic website styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 20px;
+      padding: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Book a Slot for Photoshoot</h1>
+    
+
+    <form method="post"
+      action="https://script.google.com/macros/s/AKfycbwX_RNKVXrDMiCJ5wD4QlxtzQWbpz5Wm1pgddqLOGhnRMcDZqk5oiZJ3mV1VJpT1-0BRQ/exec">
+      <label for="name">Name:</label>
+
+      <input type="text" id="name" name="name">
+
+      <label for="date">Date of Slot:</label>
+      <input type="date" id="date" name="date">
+
+      <label for="service" name="service"> Choose a Service:</label>
+
+      <select id="service" name="service">
+        <option value="wedding">Wedding</option>
+        <option value="portrait">Portrait</option>
+        <option value="event">Event</option>
+        <option value="product">Product</option>
+      </select>
+
+      <input type="submit" value="Book Slot">
+
+    </form> -->
+    <style>
+
+      .container {
+          /* background-color: #fff;  */
+           padding: 20px;
+           border-radius: 8px; 
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          max-width: 600px;
+          margin: auto;
+        }
+    
+        label {
+          display: block;
+          margin-bottom: 8px;
+        }
+    
+        input[type="text"],
+        input[type="date"],
+        select,
+        input[type="submit"] {
+           width: 100%;
+          padding: 10px;
+          margin-bottom: 20px; 
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+    
+        input[type="submit"] {
+          background-color: #333;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+        }
+    
+        input[type="submit"]:hover {
+          background-color: #555;
+        }
+      body1 {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      .background-animation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(45deg, #f06, yellow, #f06, yellow);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+    </head>
+    
+    <body>
+    <div class="background-animation"></div>
+    <!-- Your content goes here -->
+    <div>
+      <!-- <h1>Welcome to My Website</h1>
+      <p>This is a sample content.</p> -->
+      <div class="container">
+        <h1>Book a Slot for Photoshoot</h1>
+        
+    
+        <form method="post"
+          action="https://script.google.com/macros/s/AKfycbxbJX4mUUFcnSiAH3VFl6fL6wpMMDISFvoXIRPClDbx6y2t0-FLLyufwFcIPVCgs2aZ/exec">
+          <label for="name">Name:</label>
+    
+          <input type="text" id="name" name="name">
+    
+          <label for="date">Date of Slot:</label>
+          <input type="date" id="date" name="date">
+    
+          <label for="service" name="service"> Choose a Service:</label>
+    
+          <select id="service" name="service">
+            <option value="wedding">Portrait Photography</option>
+            <option value="portrait">Photo Editing</option>
+            <option value="event">shortflim shoot&editing</option>
+            <option value="product">Video Editing</option>
+          </select>
+    
+          <input type="submit" value="Book Slot">
+    
+        </form>
+    </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <div id="particles-js"></div>
+    <script>
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        // ... other configurations
+      },
+      "interactivity": {
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse"
+          }
+        }
+      }
+    });
+    </script>
+    <video autoplay muted loop id="video-bg">
+        <source src="path-to-your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      
+      <style>
+      #video-bg {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        background-size: cover;
+      }
+      </style>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxbJX4mUUFcnSiAH3VFl6fL6wpMMDISFvoXIRPClDbx6y2t0-FLLyufwFcIPVCgs2aZ/exec'
+
+      const form = document.forms['contact-form']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => alert("Thank you! your form is submitted successfully."))
+          .then(() => { window.location.reload(); })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+
+  </div>
+
+
+</body>
+
+</html>
